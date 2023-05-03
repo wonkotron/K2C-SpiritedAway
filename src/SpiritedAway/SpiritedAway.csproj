@@ -29,5 +29,11 @@
       <HintPath>..\..\..\..\..\..\SteamLibrary\steamapps\common\Kingdom Two Crowns\BepInEx\interop\Assembly-CSharp.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Il2Cppmscorlib">
+      <HintPath>..\..\..\..\..\..\SteamLibrary\steamapps\common\Kingdom Two Crowns\BepInEx\interop\Il2Cppmscorlib.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\..\..\..\..\SteamLibrary\steamapps\common\Kingdom Two Crowns\BepInEx\interop\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
   </ItemGroup>
 </Project>
