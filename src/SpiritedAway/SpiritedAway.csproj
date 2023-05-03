@@ -1,0 +1,39 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <AssemblyName>wonkotron.SpiritedAway</AssemblyName>
+    <Description>A Kingdom: Two Crowns mod that disables the omnipresent ancestral tutorial ghost</Description>
+    <Version>0.1.0</Version>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <LangVersion>latest</LangVersion>
+    <RestoreAdditionalProjectSources>
+      https://api.nuget.org/v3/index.json;
+      https://nuget.bepinex.dev/v3/index.json
+    </RestoreAdditionalProjectSources>
+    <RootNamespace>SpiritedAway</RootNamespace>
+    <Copyright>2023, wonkotron</Copyright>
+    <PackageProjectUrl>https://github.com/wonkotron/K2C-SpiritedAway</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/wonkotron/K2C-SpiritedAway</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <IsPublishable>False</IsPublishable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="BepInEx.Unity.IL2CPP" Version="6.0.0-be.*" IncludeAssets="compile" />
+    <PackageReference Include="BepInEx.PluginInfoProps" Version="2.*" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>..\..\..\..\..\..\SteamLibrary\steamapps\common\Kingdom Two Crowns\BepInEx\interop\Assembly-CSharp.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Il2Cppmscorlib">
+      <HintPath>..\..\..\..\..\..\SteamLibrary\steamapps\common\Kingdom Two Crowns\BepInEx\interop\Il2Cppmscorlib.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\..\..\..\..\SteamLibrary\steamapps\common\Kingdom Two Crowns\BepInEx\interop\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>
